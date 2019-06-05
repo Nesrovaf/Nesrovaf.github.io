@@ -331,21 +331,22 @@
         height: 25px;
         background-color: #ffffff;
         border-radius: 20px;
+        transform: translate(30px);
     }
-    .mid_layer {
-        height: 25px;
-        width: 0px;
-    }
+    
     .circle {
         position: relative;
         top: 2.5px;
         left: 2.5px;
+        left: 0;
         background-color: #333333;
         width: 20px;
         height: 20px;
         border-radius: 50%;
     }
     .mid_layer {
+        /* padding: 2.5px; */
+        position: relative;
         width: 0px;
         height: 25px;
         background-color: #222222;
