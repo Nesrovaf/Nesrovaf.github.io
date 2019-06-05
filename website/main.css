@@ -1,4 +1,5 @@
 @media only screen and (max-width: 800px) {
+   
     :root {
         --dark: #222222;
         --bright: #ffffff;
@@ -18,6 +19,80 @@
         height: 50px;
     }
     .navigation {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .dropdown>a {
+        display: none;
+    }
+    .dropdown_item a {
+        display: none;
+    }
+    .dropdown:hover>a {
+        display: none;
+    }
+    .dropdown:hover .dropdown_item>a {
+        display: none;
+    }
+    .dropdown_item a:hover {
+        display: none;
+    }
+    .sidebar_Btn {
+        transition: 0.5s;
+    }
+    .biography{
+        display: none;
+    }
+    .biography_title {
+        display: none;
+    }
+    .biography_content {
+        display: none;
+    }
+    .biography_img {
+        display: none;
+    }
+    .education {
+        display: none;
+    }
+    .education_title {
+        display: none;
+    }
+    .education_content {
+        display: none;
+    }
+    .image img {
+        display: none;
+    }
+    .image {
+        display: none;
+    }
+    .title_img{
+        display: none;
+    }
+    .communications {
+        display: none;
+    }
+    .con_word{
+        display: none;
+    }
+    .con_img img {
+        display: none;
+    }
+    .con_img {
+        display: none;
+    }
+    .toogle{
+        display: none;
+    }
+    .topbtn{
+        display: none;
+    }
+    /*分隔線*/
+
+    .navigation_m {
         height: 100vh;
         position: fixed;
         width: 0vw;
@@ -26,30 +101,30 @@
         overflow-x: hidden;
         transition: 0.5s;
     }
-    .dropdown {
+    .dropdown_m {
         line-height: 50px;
         text-align: center;
         font-size: 4vw;
     }
-    .dropdown>a {
+    .dropdown_m>a {
         color: white;
         width: 50vw;
     }
-    .dropdown_item a {
+    .dropdown_item_m a {
         font-size: 3vw;
         text-align: center;
         display: none;
         color: white;
     }
-    .dropdown:hover>a {
+    .dropdown_m:hover>a {
         animation-name: navigation_background;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
-    .dropdown:hover .dropdown_item>a {
+    .dropdown_m:hover .dropdown_item_m>a {
         display: block;
     }
-    .dropdown_item a:hover {
+    .dropdown_item_m a:hover {
         animation-name: navigation_background;
         animation-duration: 1s;
         animation-fill-mode: forwards;
@@ -57,15 +132,15 @@
     .sidebar_Btn {
         transition: 0.5s;
     }
-    .biography {
+    .biography_m {
         transition: 0.5s;
     }
-    .biography_title {
+    .biography_title_m {
         color: white;
         text-align: center;
         font-size: 30px;
     }
-    .biography_content {
+    .biography_content_m {
         box-sizing: border-box;
         padding: 5px;
         background-color: white;
@@ -74,18 +149,18 @@
         border: ridge 2px black;
         text-align: left;
     }
-    .biography_img {
+    .biography_img_m {
         float: left;
     }
-    .education {
+    .education_m {
         transition: 0.5s;
     }
-    .education_title {
+    .education_title_m {
         color: white;
         text-align: center;
         font-size: 30px;
     }
-    .education_content {
+    .education_content_m {
         box-sizing: border-box;
         padding: 5px;
         background-color: white;
@@ -94,34 +169,34 @@
         border: ridge 2px black;
         text-align: left;
     }
-    .image img {
+    .image_m img {
         width: 80px;
         height: 80px;
         margin-left: 10px;
         margin-right: 10px;
     }
-    .image {
+    .image_m {
         text-align: center;
     }
-    .title_img {
+    .title_img_m {
         max-width: 100%;
         width: 100vw;
         height: 400px;
         transition: 0.5s;
     }
-    .communications {
+    .communications_m {
         transition: 0.5s;
     }
-    .con_word {
+    .con_word_m {
         text-align: center;
     }
-    .con_img img {
+    .con_img_m img {
         margin-left: 10px;
         margin-right: 10px;
         width: 80px;
         height: 80px;
     }
-    .con_img {
+    .con_img_m {
         text-align: center;
     }
     a {
@@ -136,6 +211,10 @@
 }
 
 @media only screen and (min-width: 800px) {
+    *[class*="_m"]{
+        display: none;
+    }
+
     :root {
         --dark: #222222;
         --bright: #ffffff;
@@ -171,7 +250,7 @@
     .dropdown_item a {
         display: block;
         color:var(--dark);
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.5);
     }
     .dropdown_item {
         white-space: nowrap;
@@ -214,7 +293,6 @@
         border-radius: 10px;
         background-color: white;
         margin: 50px;
-        /* border: ridge 2px black; */
         text-align: justify;
         font-size: 20px;
         color: black;
@@ -250,7 +328,6 @@
         border-radius: 10px;
         margin: 50px;
         background-color: white;
-        /* border: ridge 2px black; */
         box-shadow: 0 0 8px 2px black;
     }
     .image {
@@ -345,7 +422,6 @@
         border-radius: 50%;
     }
     .mid_layer {
-        /* padding: 2.5px; */
         position: relative;
         width: 0px;
         height: 25px;
