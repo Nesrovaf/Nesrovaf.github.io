@@ -171,7 +171,7 @@
     .dropdown_item a {
         display: block;
         color:var(--dark);
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.5);
     }
     .dropdown_item {
         white-space: nowrap;
@@ -345,7 +345,6 @@
         border-radius: 50%;
     }
     .mid_layer {
-        /* padding: 2.5px; */
         position: relative;
         width: 0px;
         height: 25px;

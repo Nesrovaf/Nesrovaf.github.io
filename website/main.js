@@ -1,5 +1,5 @@
 var test = 0;
-var cir=true;
+var cir = true;
 function openside() {
     if (test % 2 == 0) {
         document.getElementById("slide").style.width = "50vw";
@@ -36,12 +36,9 @@ function openside() {
 }
 
 function time() {
-    var staytime=0;
+    var staytime = 0;
     setInterval(function () {
         staytime++;
-        // if(staytime==60){
-        //     document.location.href="https://www.youtube.com/watch?v=Z3ZAGBL6UBA";
-        // }
         var time = new Date();
         var h = time.getHours();
         var m = time.getMinutes();
@@ -50,18 +47,21 @@ function time() {
     }, 10);
 }
 
-function change_baclground(){
-    if(cir){
-        document.getElementsByClassName("circle")[0].style.left="27.5px";
-        document.getElementsByClassName("mid_layer")[0].style.width="50px";
+function change_baclground() {
+    if (cir) {
+        let node;
+        document.getElementsByClassName("circle")[0].style.left = "27px";
+        document.getElementsByClassName("mid_layer")[0].style.width = "50px";
         document.body.style.backgroundColor = "#FFFFFF";
         document.getElementById("slide").style.backgroundColor = "#222222";
+        document.getElementsByClassName("circle")[0].style.backgroundColor = "#FFFFFF"
     }
-    else{
-        document.getElementsByClassName("circle")[0].style.left="2.5px";
-        document.getElementsByClassName("mid_layer")[0].style.width="0px";
+    else {
+        document.getElementsByClassName("circle")[0].style.left = "2.5px";
+        document.getElementsByClassName("mid_layer")[0].style.width = "0px";
         document.body.style.backgroundColor = "#222222";
         document.getElementById("slide").style.backgroundColor = "#FFFFFF";
+        document.getElementsByClassName("circle")[0].style.backgroundColor = "#333333"
     }
     cir = !cir;
 }
