@@ -1,5 +1,5 @@
 var test = 0;
-
+var cir=true;
 function openside() {
     if (test % 2 == 0) {
         document.getElementById("slide").style.width = "50vw";
@@ -49,3 +49,20 @@ function time() {
         document.getElementById("time").innerText = h + " : " + m + " : " + s;
     }, 10);
 }
+
+function change_baclground(){
+    if(cir){
+        document.getElementsByClassName("circle")[0].style.left="27.5px";
+        document.getElementsByClassName("mid_layer")[0].style.width="50px";
+        document.body.style.backgroundColor = "#FFFFFF";
+        document.getElementById("slide").style.backgroundColor = "#222222";
+    }
+    else{
+        document.getElementsByClassName("circle")[0].style.left="2.5px";
+        document.getElementsByClassName("mid_layer")[0].style.width="0px";
+        document.body.style.backgroundColor = "#222222";
+        document.getElementById("slide").style.backgroundColor = "#FFFFFF";
+    }
+    cir = !cir;
+}
+

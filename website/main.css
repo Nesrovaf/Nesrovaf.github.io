@@ -134,6 +134,7 @@
 
 @media only screen and (min-width: 800px) {
     * {
+        transition: .3s;
         text-decoration: none;
         margin: 0;
         padding: 0;
@@ -312,5 +313,43 @@
 
     .rounded {
         border-radius: 0 0 5px 5px;
+    }
+    .topbtn{
+        position: fixed;
+        z-index: 2;
+        transform: translateZ(0);
+        top:80vh;
+        left:85vw;
+        width:80px;
+        height:80px;
+        background-color: skyblue;
+        border-radius: 50px;
+    }
+
+   
+    .toogle{
+        width: 50px;
+        height:25px;
+        background-color: yellow;
+        border-radius: 20px;
+    }
+    .mid_layer{
+        height:25px;
+        width:0px;
+    }
+    .circle{
+        position: relative;
+        top:2.5px;
+        left:2.5px;
+        background-color: red;
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+    }
+    .mid_layer{
+        width:0px;
+        height:25px;
+        background-color: blue;
+        border-radius: 20px;
     }
 }
