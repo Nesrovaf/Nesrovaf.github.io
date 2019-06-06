@@ -19,7 +19,7 @@
         width: 100vw;
         height: 50px;
     }
-    /* .navigation {
+    .navigation {
         display: none;
     }
     .dropdown {
@@ -90,7 +90,7 @@
     }
     .topbtn{
         display: none;
-    } */
+    }
     /*分隔線*/
 
     .navigation_m {
