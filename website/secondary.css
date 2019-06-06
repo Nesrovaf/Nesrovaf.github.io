@@ -13,7 +13,10 @@
         width: 100vw;
         height: 50px;
     }
-    .navigation {
+
+    /*要被隱藏的*/
+    
+    .navigation_m {
         background-color: #666666;
         height: 100vh;
         position: fixed;
@@ -23,30 +26,30 @@
         overflow-x: hidden;
         transition: 0.5s;
     }
-    .dropdown {
+    .dropdown_m {
         line-height: 50px;
         text-align: center;
         font-size: 4vw;
     }
-    .dropdown>a {
+    .dropdown_m>a {
         color: white;
         width: 50vw;
     }
-    .dropdown_item a {
+    .dropdown_item_m a {
         font-size: 3vw;
         text-align: center;
         display: none;
         color: white;
     }
-    .dropdown:hover>a {
+    .dropdown_m:hover>a {
         animation-name: navigation_background;
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }
-    .dropdown:hover .dropdown_item>a {
+    .dropdown_m:hover .dropdown_item_m>a {
         display: block;
     }
-    .dropdown_item a:hover {
+    .dropdown_item_m a:hover {
         animation-name: navigation_background;
         animation-duration: 1s;
         animation-fill-mode: forwards;
@@ -54,15 +57,15 @@
     .sidebar_Btn {
         transition: 0.5s;
     }
-    .article {
+    .article_m {
         transition: 0.5s;
     }
-    .article_title {
+    .article_title_m {
         color: white;
         text-align: center;
         font-size: 30px;
     }
-    .article_content {
+    .article_content_m {
         box-sizing: border-box;
         padding: 5px;
         background-color: white;
@@ -71,9 +74,34 @@
         border: ridge 2px black;
         text-align: justify;
     }
+    /*要被隱藏的*/
+    .navigation {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .dropdown>a {
+        display: none;
+    }
+    .dropdown_item a {
+        display: none;
+    }
+    .article {
+        display: none;
+    }
+    .article_title {
+        display: none;
+    }
+    .article_content {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 800px) {
+    *[class*="_m"] {
+        display: none;
+    }
     * {
         text-decoration: none;
         margin: 0;
@@ -151,5 +179,4 @@
         padding: 5px;
         border-radius: 10px;
     }
-    
 }

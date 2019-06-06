@@ -1,5 +1,5 @@
 @media only screen and (max-width: 800px) {
-   
+    
     :root {
         --dark: #222222;
         --bright: #ffffff;
@@ -10,6 +10,7 @@
         padding: 0;
         font-family: 'Crete Round', serif, 'Noto Sans TC', sans-serif;
     }
+    
     body {
         background-color: var(--dark);
     }
@@ -18,7 +19,7 @@
         width: 100vw;
         height: 50px;
     }
-    .navigation {
+    /* .navigation {
         display: none;
     }
     .dropdown {
@@ -89,7 +90,7 @@
     }
     .topbtn{
         display: none;
-    }
+    } */
     /*分隔線*/
 
     .navigation_m {
