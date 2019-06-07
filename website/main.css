@@ -1,5 +1,4 @@
 @media only screen and (max-width: 800px) {
-    
     :root {
         --dark: #222222;
         --bright: #ffffff;
@@ -10,7 +9,6 @@
         padding: 0;
         font-family: 'Crete Round', serif, 'Noto Sans TC', sans-serif;
     }
-    
     body {
         background-color: var(--dark);
     }
@@ -43,7 +41,7 @@
     .sidebar_Btn {
         transition: 0.5s;
     }
-    .biography{
+    .biography {
         display: none;
     }
     .biography_title {
@@ -70,13 +68,13 @@
     .image {
         display: none;
     }
-    .title_img{
+    .title_img {
         display: none;
     }
     .communications {
         display: none;
     }
-    .con_word{
+    .con_word {
         display: none;
     }
     .con_img img {
@@ -85,14 +83,13 @@
     .con_img {
         display: none;
     }
-    .toogle{
+    .toogle {
         display: none;
     }
-    .topbtn{
+    .topbtn {
         display: none;
     }
     /*分隔線*/
-
     .navigation_m {
         height: 100vh;
         position: fixed;
@@ -212,10 +209,9 @@
 }
 
 @media only screen and (min-width: 800px) {
-    *[class*="_m"]{
+    *[class*="_m"] {
         display: none;
     }
-
     :root {
         --dark: #222222;
         --bright: #ffffff;
@@ -250,7 +246,7 @@
     }
     .dropdown_item a {
         display: block;
-        color:var(--dark);
+        color: var(--dark);
         background: rgba(255, 255, 255, 0.5);
     }
     .dropdown_item {
@@ -397,21 +393,22 @@
         position: fixed;
         z-index: 2;
         transform: translateZ(0);
-        top: 80vh;
-        left: 85vw;
+        top: 85%;
+        left: 90%;
         width: 80px;
         height: 80px;
-        background-color: skyblue;
+        background-color: #ffffff;
         border-radius: 50px;
     }
     .toogle {
+        margin-left:20px;
+        margin-bottom:15px;
         width: 50px;
         height: 25px;
         background-color: #ffffff;
         border-radius: 20px;
         transform: translate(30px);
     }
-    
     .circle {
         position: relative;
         top: 2.5px;
