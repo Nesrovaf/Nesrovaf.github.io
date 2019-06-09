@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Owo</title>
+
+    <style>
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .switch {
+            --ball-size: 30px;
+            --ball-color: #dddddd;
+            --bg-color: #262626;
+            --bg-overlay-color:  #dddddd;
+
+            margin: 0 auto;
+            width: calc( var(--ball-size) * 2 );
+            height: var(--ball-size);
+            background-color: var(--bg-color);
+            border-radius: calc( var(--ball-size) / 2);
+            cursor: pointer;
+        }
+
+        .switch[data-dark-theme] {
+            --ball-color: #262626;
+            --bg-color: #262626;
+            --bg-overlay-color:  #dddddd;
+        }
+
+        .slider {
+            position: relative;
+            width: var(--ball-size);
+            border-radius: calc( var(--ball-size) / 2);
+            height: 100%;
+            transition: .3s;
+            background-color: var(--bg-overlay-color);
+        }
+
+        .switch[data-dark-theme] .slider {
+            width: 100%;
+        }
+
+        .slider::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            width: var(--ball-size);
+            height: var(--ball-size);
+            transition: .5s;
+            border-radius: 50%;
+            box-shadow: 0 0 5px  #262626;
+            background-color: var(--ball-color);
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="switch" onclick="toggle.apply(this)">
+    <div class="slider"></div>
+</div>
+
+<script>
+    function toggle() {
+        this.toggleAttribute('data-dark-theme');
+        sessionStorage.setItem('theme', (this.getAttribute('data-dark-theme') !== null) ? 'dark' : '');
+    }
+
+    if (sessionStorage.getItem('theme') === 'dark') {
+        for (let s of document.getElementsByClassName('switch')) {
+            s.toggleAttribute('data-dark-theme', true);
+        }
+    }
+    
+</script>
+
+</body>
+</html>
