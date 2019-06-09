@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="secondary.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round|Noto+Sans+TC|Orbitron|Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <script src="secondary.js"></script>
+    <title>publication</title>
+</head>
+
+<body>
+    <button class="sidebar_Btn" onclick="openside()" id="slide_btn">☰ Toggle Sidebar</button>
+    <!--desktop-->
+    <ul class="navigation shadow rounded" id="slide">
+        <li class="dropdown">
+            <a href="main.html" class="droplink">Home</a>
+        </li>
+        <li class="dropdown"></li>
+        <li class="dropdown"></li>
+        <li class="dropdown">
+            <a href="publication.html" class="droplink">Publication</a>
+            <div class="dropdown_item">
+                <a href="publication.html#Journals" class="droplink">Journals</a>
+                <a href="publication.html#International Conferences" class="droplink">Conferences</a>
+                <a href="publication.html#Patents" class="droplink">Patents</a>
+                <a href="publication.html#Book Chapters" class="droplink">Book Chapters</a>
+                <a href="publication.html#Domestic Journal" class="droplink">Domestic Journal</a>
+                <a href="publication.html#Book" class="droplink">Book</a>
+                <a href="publication.html#Technical Report" class="droplink">Technical Report</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="services.html" class="droplink">Services</a>
+            <div class="dropdown_item">
+                <a href="services.html#Journal_Editor" class="droplink">Journal Editor</a>
+                <a href="services.html#Talks" class="droplink">Talks</a>
+                <a href="services.html#Review" class="droplink">競賽評審</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="experience.html" class="droplink">Experience</a>
+            <div class="dropdown_item">
+                <a href="experience.html#experience_per" class="droplink">個人經歷 </a>
+                <a href="experience.html#school_service" class="droplink">學校服務</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="project.html" class="droplink">Project</a>
+            <div class="dropdown_item">
+                <a href="project.html#technology" class="droplink">科技部計畫 </a>
+                <a href="project.html#social" class="droplink">業界計畫</a>
+                <a href="project.html#education" class="droplink">教育部計畫</a>
+                <a href="project.html#school" class="droplink">校內計畫</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="award.html" class="droplink">Award</a>
+            <div class="dropdown_item">
+                <a href="award.html#award_industry" class="droplink">創業活動成果 </a>
+                <a href="award.html#award_social" class="droplink">校外競賽成果 </a>
+                <a href="award.html#award_school" class="droplink">校內競賽成果</a>
+                <a href="award.html#award_student" class="droplink">指導教授獲獎</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="contact.html" class="droplink">Contact</a>
+        </li>
+    </ul>
+    <br>
+    <br>
+
+    <div class="article" id="experience_per">
+        <div class="article_title">個人經歷 </div>
+        <div class="article_content">Associate Professor, Dept. CSIE, TKU 淡江大學資工系副教授 (2015.8 ~ now)
+            Assistant Professor, Dept. CSIE, TKU 淡江大學資工系助理教授 (2011.8 ~ 2015.7)
+            Advanced Engineer, HTMM Inc. 恆通高科(原凌陽電通) (2008.6 ~ 2011.7)
+            Adjunct Assistant Professor, Dept. CS, YPU 元培大學資工系 (2009. 8 ~ 2010.1)
+            Research intern, CCL, ITRI 工研院電通所 (2003.1 ~ 2003.6 and 2004)
+            Summer intern, Broadband Product Division, Hitron Inc. (2001.7 ~ 2001.8)</div>
+    </div>
+
+    <div class="article" id="school_service">
+        <div class="article_title">學校服務</div>
+        <div class="article_content">102學年度淡江大學淡江時報委員會委員
+            103學年度淡江大學校務會議資工系代表</div>
+    </div>
+
+    <div class="topbtn">
+        <a href="#">
+            <svg height="80" width="80" class="top">
+                <polyline points="20,50 40,25 60,50"
+                    style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#222222;stroke-width:5">
+            </svg>
+        </a>
+    </div>
+    <div style="clear:both"></div>
+
+    <div class="toogle" onclick="change_baclground()">
+        <div class="mid_layer">
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!--mobile-->
+    <ul class="navigation_m shadow rounded" id="slide_m">
+        <li class="dropdown_m">
+            <a href="main.html" class="droplink_m">Home</a>
+        </li>
+        <li class="dropdown_m"></li>
+        <li class="dropdown_m"></li>
+        <li class="dropdown_m">
+            <a href="publication.html" class="droplink_m">Publication</a>
+            <div class="dropdown_item_m">
+                <a href="publication.html#Journals_m" class="droplink_m">Journals</a>
+                <a href="publication.html#International Conferences_m" class="droplink_m">Conferences</a>
+                <a href="publication.html#Patents_m" class="droplink_m">Patents</a>
+                <a href="publication.html#Book Chapters_m" class="droplink_m">Book Chapters</a>
+                <a href="publication.html#Domestic Journal_m" class="droplink_m">Domestic Journal</a>
+                <a href="publication.html#Book_m" class="droplink_m">Book</a>
+                <a href="publication.html#Technical Report_m" class="droplink_m">Technical Report</a>
+            </div>
+        </li>
+
+        <li class="dropdown_m">
+            <a href="services.html" class="droplink_m">Services</a>
+            <div class="dropdown_item_m">
+                <a href="services.html#Journal_Editor_m" class="droplink_m">Journal Editor</a>
+                <a href="services.html#Talks_m" class="droplink_m">Talks</a>
+                <a href="services.html#Review_m" class="droplink_m">競賽評審</a>
+            </div>
+        </li>
+
+        <li class="dropdown_m">
+            <a href="experience.html" class="droplink_m">Experience</a>
+            <div class="dropdown_item_m">
+                <a href="experience.html#experience_per_m" class="droplink_m">個人經歷 </a>
+                <a href="experience.html#school_service_m" class="droplink_m">學校服務</a>
+            </div>
+        </li>
+
+        <li class="dropdown_m">
+            <a href="project.html" class="droplink_m">Project</a>
+            <div class="dropdown_item_m">
+                <a href="project.html#technology_m" class="droplink_m">科技部計畫 </a>
+                <a href="project.html#social_m" class="droplink_m">業界計畫</a>
+                <a href="project.html#education_m" class="droplink_m">教育部計畫</a>
+                <a href="project.html#school_m" class="droplink_m">校內計畫</a>
+            </div>
+        </li>
+
+        <li class="dropdown_m">
+            <a href="award.html" class="droplink_m">Award</a>
+            <div class="dropdown_item_m">
+                <a href="award.html#award_industry_m" class="droplink_m">創業活動成果 </a>
+                <a href="award.html#award_social_m" class="droplink_m">校外競賽成果 </a>
+                <a href="award.html#award_school_m" class="droplink_m">校內競賽成果</a>
+                <a href="award.html#award_student_m" class="droplink_m">指導教授獲獎</a>
+            </div>
+        </li>
+
+        <li class="dropdown_m">
+            <a href="contact.html" class="droplink_m">Contact</a>
+        </li>
+    </ul>
+
+    <div class="article_m" id="experience_per_m">
+        <div class="article_title_m">個人經歷 </div>
+        <div class="article_content_m">Associate Professor, Dept. CSIE, TKU 淡江大學資工系副教授 (2015.8 ~ now)
+            Assistant Professor, Dept. CSIE, TKU 淡江大學資工系助理教授 (2011.8 ~ 2015.7)
+            Advanced Engineer, HTMM Inc. 恆通高科(原凌陽電通) (2008.6 ~ 2011.7)
+            Adjunct Assistant Professor, Dept. CS, YPU 元培大學資工系 (2009. 8 ~ 2010.1)
+            Research intern, CCL, ITRI 工研院電通所 (2003.1 ~ 2003.6 and 2004)
+            Summer intern, Broadband Product Division, Hitron Inc. (2001.7 ~ 2001.8)</div>
+    </div>
+
+    <div class="article_m" id="school_service_m">
+        <div class="article_title_m">學校服務</div>
+        <div class="article_content_m">102學年度淡江大學淡江時報委員會委員
+            103學年度淡江大學校務會議資工系代表</div>
+    </div>
+    
+    <div class="topbtn_m">
+        <a href="#">
+            <svg height="80" width="80" class="top_m">
+                <polyline points="20,50 40,25 60,50"
+                    style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:white;stroke-width:5">
+            </svg>
+        </a>
+    </div>
+    <div class="toogle_m" onclick="change_baclground()">
+        <div class="mid_layer_m">
+            <div class="circle_m"></div>
+        </div>
+    </div>
+</body>
+
+</html>
