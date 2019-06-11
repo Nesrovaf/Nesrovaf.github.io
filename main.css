@@ -1,0 +1,448 @@
+@media only screen and (max-width: 800px) {
+    :root {
+        --dark: #222222;
+        --bright: #ffffff;
+    }
+    * {
+        transition: .3s;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        font-family: 'Crete Round', serif, 'Noto Sans TC', sans-serif;
+    }
+    body {
+        background-color: var(--dark);
+    }
+    .author{
+        color:white;
+    }
+    .sidebar_Btn {
+        max-width: 100%;
+        width: 100vw;
+        height: 50px;
+    }
+    .navigation {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .dropdown>a {
+        display: none;
+    }
+    .dropdown_item a {
+        display: none;
+    }
+    .dropdown:hover>a {
+        display: none;
+    }
+    .dropdown:hover .dropdown_item>a {
+        display: none;
+    }
+    .sidebar_Btn {
+        transition: 0.5s;
+    }
+    .biography {
+        display: none;
+    }
+    .biography_title {
+        display: none;
+    }
+    .biography_content {
+        display: none;
+    }
+    .biography_img {
+        display: none;
+    }
+    .education {
+        display: none;
+    }
+    .education_title {
+        display: none;
+    }
+    .education_content {
+        display: none;
+    }
+    .image img {
+        display: none;
+    }
+    .image {
+        display: none;
+    }
+    .title_img {
+        display: none;
+    }
+    .communications {
+        display: none;
+    }
+    .con_word {
+        display: none;
+    }
+    .con_img img {
+        display: none;
+    }
+    .con_img {
+        display: none;
+    }
+    .toogle {
+        display: none;
+    }
+    .topbtn {
+        display: none;
+    }
+    /*分隔線*/
+    .navigation_m {
+        height: 100vh;
+        position: fixed;
+        width: 0vw;
+        top: 0;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .dropdown_m {
+        line-height: 50px;
+        text-align: center;
+        font-size: 4vw;
+    }
+    .dropdown_m>a {
+        color: white;
+        width: 50vw;
+    }
+    .dropdown_item_m a {
+        font-size: 3vw;
+        text-align: center;
+        display: none;
+        color: white;
+    }
+    .dropdown_m:hover>a {
+        animation-name: navigation_background;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .dropdown_m:hover .dropdown_item_m>a {
+        display: block;
+    }
+    .dropdown_item_m a:hover {
+        animation-name: navigation_background;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .sidebar_Btn {
+        transition: 0.5s;
+    }
+    .biography_m {
+        transition: 0.5s;
+    }
+    .biography_title_m {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+    .biography_content_m {
+        box-sizing: border-box;
+        padding: 5px;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        border: ridge 2px black;
+        text-align: left;
+    }
+    .biography_img_m {
+        float: left;
+    }
+    .education_m {
+        transition: 0.5s;
+    }
+    .education_title_m {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+    }
+    .education_content_m {
+        box-sizing: border-box;
+        padding: 5px;
+        background-color: white;
+        border-radius: 10px;
+        color: black;
+        border: ridge 2px black;
+        text-align: left;
+    }
+    .image_m img {
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .image_m {
+        text-align: center;
+    }
+    .title_img_m {
+        max-width: 100%;
+        width: 100vw;
+        height: 400px;
+        transition: 0.5s;
+    }
+    .communications_m {
+        text-align: center;
+        transition: 0.5s;
+    }
+    .con_word_m {
+        text-align: center;
+    }
+    .con_img_m .img {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 80px;
+        height: 80px;
+    }
+    .con_img_m {
+        text-align: center;
+    }
+    a {
+        color: white;
+    }
+    @keyframes navigation_background {
+        from {}
+        to {
+            color: aqua;
+        }
+    }
+    .toogle_m {
+        align-self: center;
+        height: 25px;
+        width: 50px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        transform: translate(30px);
+    }
+    .circle_m {
+        margin-top: 5px;
+        position: relative;
+        top: 2.5px;
+        left: 2.5px;
+        left: 0;
+        background-color: #333333;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .mid_layer_m {
+        position: relative;
+        width: 0px;
+        height: 25px;
+        background-color: #222222;
+        border-radius: 20px;
+    }
+    .topbtn_m {
+        z-index: 2;
+        text-align: center;
+        background-color: #333333;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    [class*="_m"] {
+        display: none;
+    }
+    :root {
+        --dark: #222222;
+        --bright: #ffffff;
+    }
+    a:visited{
+        color:white;
+    }
+    a:link{
+        color:white;
+    }
+    
+    .droplink {
+        color: var(--dark);
+    }
+
+    * {
+        font-family: 'Crete Round', serif, 'Noto Sans TC', sans-serif;
+        transition: .3s;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-color: var(--dark);
+    }
+    .sidebar_Btn {
+        display: none;
+    }
+    .navigation {
+        width: 100%;
+        position: fixed;
+        font-family: 'Crete Round', serif, 'Noto Sans TC', sans-serif;
+        background-color: var(--bright);
+        font-size: 30px;
+        height: 40px;
+        display: flex;
+    }
+    .dropdown {
+        list-style: none;
+        display: inline-block;
+        flex: 1;
+        text-align: center;
+    }
+    .dropdown_item a {
+        display: block;
+        color: var(--dark);
+        background: rgba(255, 255, 255, 0.8);
+    }
+    .dropdown_item {
+        white-space: nowrap;
+        line-height: 60px;
+        font-size: 20px;
+        display: none;
+    }
+    .dropdown:hover .dropdown_item {
+        display: block;
+    }
+    .dropdown_item a:hover {
+        animation-name: navigation_background;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .dropdown a {
+        color: var(--dark);
+    }
+    .dropdown a:hover, .dropdown {
+        animation-name: navigation_background;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes navigation_background {
+        from {
+            color: var(--dark);
+        }
+        to {
+            color: aqua;
+        }
+    }
+    .biography {
+        max-width: 50%;
+        width: 50vw;
+        float: left;
+        font-family: 'Crete Round', serif, 'Noto Sans TC', sans-serif;
+    }
+    .biography_content {
+        padding: 30px;
+        border-radius: 10px;
+        background-color: white;
+        margin: 50px;
+        text-align: justify;
+        font-size: 20px;
+        color: black;
+        box-shadow: 0 0 8px 2px black;
+    }
+    .biography_title {
+        color: white;
+        margin: 30px;
+        text-align: center;
+        font-size: 50px;
+    }
+    .biography_img {
+        height: 250px;
+        width: 200px;
+        margin: 10px;
+        float: left;
+    }
+    .education_title {
+        color: white;
+        margin: 30px;
+        text-align: center;
+        font-size: 50px;
+    }
+    .education {
+        max-width: 50%;
+        float: left;
+        width: 50vw;
+        font-family: 'Crete Round', serif, 'Noto Sans TC', sans-serif;
+    }
+    .education_content {
+        text-align: left;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 50px;
+        background-color: white;
+        box-shadow: 0 0 8px 2px black;
+    }
+    .image {
+        width: 100%;
+        text-align: center;
+    }
+    .education_img {
+        margin: 20px 20px;
+        width: 100px;
+        height: 100px;
+    }
+    .communications {
+        text-align: center;
+    }
+    .con_word {
+        font-size: 25px;
+        color: white;
+        text-align: center;
+    }
+    .con_img {
+        text-align: center;
+    }
+    .con_img .img {
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    footer {
+        position: relative;
+    }
+    .shadow {
+        box-shadow: 0 0 8px 2px rgb(32, 4, 4);
+    }
+    .rounded {
+        border-radius: 0 0 5px 5px;
+    }
+    .topbtn {
+        position: fixed;
+        z-index: 1;
+        top: 85%;
+        left: 90%;
+        width: 80px;
+        height: 80px;
+        background-color: #ffffff;
+        border-radius: 50px;
+    }
+    .toogle {
+        margin-left: 20px;
+        margin-bottom: 15px;
+        width: 50px;
+        height: 25px;
+        background-color: #ffffff;
+        border-radius: 20px;
+        transform: translate(30px);
+    }
+    .mid_layer {
+        position: relative;
+        width: 0px;
+        height: 25px;
+        background-color: #222222;
+        border-radius: 20px;
+    }
+    .circle {
+        position: relative;
+        top: 2.5px;
+        left: 2.5px;
+        background-color: #333333;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    
+    .author{
+        color:white;
+    }
+}

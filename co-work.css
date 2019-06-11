@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* font-size: 2em; */
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    font-size: 2em;
+    line-height: 100px;
+    height: 100%;
+    position: relative;
+    white-space: pre;
+}
+
+span {
+    width: 50%;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}
+
+article {
+    float: left;
+    width: calc(100% / 3 );
+    height: 500px;
+}
+
+
+article:not(:last-child) {
+    border-right: solid black;
+}
