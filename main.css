@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) {
+﻿@media only screen and (max-width: 800px) {
     :root {
         --dark: #222222;
         --bright: #ffffff;
@@ -188,6 +188,7 @@
         transition: 0.5s;
     }
     .con_word_m {
+	color:white;
         text-align: center;
     }
     .con_img_m .img {
