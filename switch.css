@@ -1,0 +1,48 @@
+:root {
+    --dark: #262626;
+    --bright: #dddddd;
+}
+
+.switch {
+    --ball-size: 30px;
+    --ball-color: var(--bright);
+    --bg-color: var(--dark);
+    --bg-overlay-color:  var(--bright);
+
+    width: calc( var(--ball-size) * 2 );
+    height: var(--ball-size);
+    background-color: var(--bg-color);
+    border-radius: calc( var(--ball-size) / 2);
+    cursor: pointer;
+}
+
+.switch[data-dark-theme] {
+    --ball-color: var(--dark);
+    --bg-color: var(--dark);
+    --bg-overlay-color:  var(--bright);
+}
+
+.slider {
+    position: relative;
+    width: var(--ball-size);
+    border-radius: calc( var(--ball-size) / 2);
+    height: 100%;
+    transition: width .3s;
+    background-color: var(--bg-overlay-color);
+}
+
+.switch[data-dark-theme] .slider {
+    width: 100%;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: var(--ball-size);
+    height: var(--ball-size);
+    transition: background-color .5s;
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--dark);
+    background-color: var(--ball-color);
+}
