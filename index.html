@@ -4,19 +4,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Crete+Round|Noto+Sans+TC|Orbitron|Press+Start+2P&display=swap"
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Crete+Round|Noto+Sans+TC|Orbitron|Press+Start+2P|Oswald&display=swap"
         rel="stylesheet">
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
     <title>潘孟鉉網頁預定地</title>
 
 </head>
 
-<body>
-
-<!--desktop-->
+<body onload=idle()>
 
     <button class="sidebar_Btn" onclick="openside()" id="slide_btn">☰ Toggle Sidebar</button>
+    <!--desktop-->
     <ul class="navigation shadow rounded" id="slide">
         <li class="dropdown">
             <a href="index.html" class="droplink">Home</a>
@@ -78,12 +78,12 @@
         </li>
     </ul>
 
-    <img class="title_img" id="title_image" src="image/title_image.jpg" width="100%" height="800px">
+    <img class="title_img" src="src/title_image.jpg" width="100%" height="800px">
 
     <div class="biography" id="bio">
         <div class="biography_title">Biography</div>
         <div class="biography_content">
-            <img class="biography_img" src="image/mspan3.jpg">
+            <img class="biography_img" src="src/mspan3.jpg">
             Meng-Shiuan Pan received the BS and MS degrees from the National Chung Cheng University and National Tsing
             Hua University, Taiwan, in 2001 and 2003, respectively, and the Ph.D. degree from the National Chiao Tung
             University, Taiwan, in 2008. After obtaining his Ph.D degree, Dr. Pan worked in HTMM Corporation, Hsin-Chu,
@@ -104,43 +104,56 @@
             2003.6)<br>
             Ph.D. degree, Department of Computer Science, National Chiao Tung University 交大資工 (2003.9 ~ 2008.4)<br>
             <div class="image">
-                <img class="education_img" src="image/1200px-NCTU_emblem.png">
-                <img class="education_img" src="image/ccu_logo_l.png">
-                <img class="education_img" src="image/Tsinghua_University_Logo.png">
+                <img class="education_img" src="src/1200px-NCTU_emblem.png">
+                <img class="education_img" src="src/ccu_logo_l.png">
+                <img class="education_img" src="src/Tsinghua_University_Logo.png">
             </div>
         </div>
     </div>
 
-
-    <div class="communications" id="com" style="clear: both">
+    <footer class="communications" id="com" style="clear: both">
         <div class="con_word">
             Lab:E659<br>
             Tel: 02-2621-5656 #3520
         </div>
         <br>
         <div class="con_img">
-            <a href="https://www.facebook.com/mengshiuan.pan"><img src="image/facebook_circle-512.png"></a>
-            <a href="mailto:mspan@mail.tku.edu.tw"><img src="image/gmail-circle-icon-5.jpg"></a>
-            <a href="http://www.csie.tku.edu.tw/info/92"><img src="image/Tamkang_University_logo.png"></a>
+            <a href="https://www.facebook.com/mengshiuan.pan">
+                <svg height="80" width="80" class="img">
+                    <circle cx="40" cy="40" r=40 stroke="rgb(78,113,168)" fill="rgb(78,113,168)"></circle>
+                    <text x="28" y="62" stroke="white" fill="white" style="font-size:60px">f</text>
+                </svg>
+            </a>
+            <a href="mailto:mspan@mail.tku.edu.tw">
+                <svg height="80" width="80" class="img">
+                    <circle cx="40" cy="40" r=40 stroke="red" fill="red"></circle>
+                    <polygon points="17,20 40,40 63,20" style="fill:white;stroke:white;stroke-width:1"></polygon>
+                    <polygon points="15,30 15,60 65,60 65,30 40,50" style="fill:white;stroke:white;stroke-width:1">
+                    </polygon>
+                </svg>
+            </a>
+            <a href="http://www.csie.tku.edu.tw/info/92"><img src="src/Tamkang_University_logo.png" class="img"></a>
         </div>
-    </div>
+        <div class="author">Made by 楊竣程 黃柏睿 馮駿林 <a href="co-work.html" class="co-work">分工表</a></div>
+    </footer>
 
     <div class="topbtn">
         <a href="#">
             <svg height="80" width="80" class="top">
-                <polyline points="20,50 40,25 60,50"
-                    style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:white;stroke-width:5">
+                <polyline id="btn_self" points="20,50 40,25 60,50"
+                    style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:#222222;stroke-width:5">
+                </polyline>
             </svg>
         </a>
     </div>
 
-    <div class="toogle" onclick="change_baclground()">
-        <div class="mid_layer" >
-            <div class="circle" ></div>
+    <div class="toogle" onclick="change_background()">
+        <div class="mid_layer">
+            <div class="circle"></div>
         </div>
     </div>
 
-<!-- mobile -->
+    <!-- mobile -->
 
     <ul class="navigation_m shadow rounded" id="slide_m">
         <li class="dropdown_m">
@@ -151,50 +164,50 @@
         <li class="dropdown_m">
             <a href="publication.html" class="droplink_m">Publication</a>
             <div class="dropdown_item_m">
-                <a href="publication.html#Journals" class="droplink_m">Journals</a>
-                <a href="publication.html#International Conferences" class="droplink_m">Conferences</a>
-                <a href="publication.html#Patents" class="droplink_m">Patents</a>
-                <a href="publication.html#Book Chapters" class="droplink_m">Book Chapters</a>
-                <a href="publication.html#Domestic Journal" class="droplink_m">Domestic Journal</a>
-                <a href="publication.html#Book" class="droplink_m">Book</a>
-                <a href="publication.html#Technical Report" class="droplink_m">Technical Report</a>
+                <a href="publication.html#Journals_m" class="droplink_m">Journals</a>
+                <a href="publication.html#International Conferences_m" class="droplink_m">Conferences</a>
+                <a href="publication.html#Patents_m" class="droplink_m">Patents</a>
+                <a href="publication.html#Book Chapters_m" class="droplink_m">Book Chapters</a>
+                <a href="publication.html#Domestic Journal_m" class="droplink_m">Domestic Journal</a>
+                <a href="publication.html#Book_m" class="droplink_m">Book</a>
+                <a href="publication.html#Technical Report_m" class="droplink_m">Technical Report</a>
             </div>
         </li>
 
         <li class="dropdown_m">
             <a href="services.html" class="droplink_m">Services</a>
             <div class="dropdown_item_m">
-                <a href="services.html#Journal_Editor" class="droplink_m">Journal Editor</a>
-                <a href="services.html#Talks" class="droplink_m">Talks</a>
-                <a href="services.html#Review" class="droplink_m">競賽評審</a>
+                <a href="services.html#Journal_Editor_m" class="droplink_m">Journal Editor</a>
+                <a href="services.html#Talks_m" class="droplink_m">Talks</a>
+                <a href="services.html#Review_m" class="droplink_m">競賽評審</a>
             </div>
         </li>
 
         <li class="dropdown_m">
             <a href="experience.html" class="droplink_m">Experience</a>
             <div class="dropdown_item_m">
-                <a href="experience.html#experience_per" class="droplink_m">個人經歷 </a>
-                <a href="experience.html#school_service" class="droplink_m">學校服務</a>
+                <a href="experience.html#experience_per_m" class="droplink_m">個人經歷 </a>
+                <a href="experience.html#school_service_m" class="droplink_m">學校服務</a>
             </div>
         </li>
 
         <li class="dropdown_m">
             <a href="project.html" class="droplink_m">Project</a>
             <div class="dropdown_item_m">
-                <a href="project.html#technology" class="droplink_m">科技部計畫 </a>
-                <a href="project.html#social" class="droplink_m">業界計畫</a>
-                <a href="project.html#education" class="droplink_m">教育部計畫</a>
-                <a href="project.html#school" class="droplink_m">校內計畫</a>
+                <a href="project.html#technology_m" class="droplink_m">科技部計畫 </a>
+                <a href="project.html#social_m" class="droplink_m">業界計畫</a>
+                <a href="project.html#education_m" class="droplink_m">教育部計畫</a>
+                <a href="project.html#school_m" class="droplink_m">校內計畫</a>
             </div>
         </li>
 
         <li class="dropdown_m">
             <a href="award.html" class="droplink_m">Award</a>
             <div class="dropdown_item_m">
-                <a href="award.html#award_industry" class="droplink_m">創業活動成果 </a>
-                <a href="award.html#award_social" class="droplink_m">校外競賽成果 </a>
-                <a href="award.html#award_school" class="droplink_m">校內競賽成果</a>
-                <a href="award.html#award_student" class="droplink_m">指導教授獲獎</a>
+                <a href="award.html#award_industry_m" class="droplink_m">創業活動成果 </a>
+                <a href="award.html#award_social_m" class="droplink_m">校外競賽成果 </a>
+                <a href="award.html#award_school_m" class="droplink_m">校內競賽成果</a>
+                <a href="award.html#award_student_m" class="droplink_m">指導教授獲獎</a>
             </div>
         </li>
 
@@ -203,12 +216,12 @@
         </li>
     </ul>
 
-    <img class="title_img_m" id="title_image_m" src="image/title_image.jpg" width="100%" height="800px">
+    <img class="title_img_m" id="title_image_m" src="src/title_image.jpg" width="100%" height="800px">
 
     <div class="biography_m" id="bio_m">
         <div class="biography_title_m">Biography</div>
         <div class="biography_content_m">
-            <img class="biography_img_m" src="image/mspan3.jpg">
+            <img class="biography_img_m" src="src/mspan3.jpg">
             Meng-Shiuan Pan received the BS and MS degrees from the National Chung Cheng University and National Tsing
             Hua University, Taiwan, in 2001 and 2003, respectively, and the Ph.D. degree from the National Chiao Tung
             University, Taiwan, in 2008. After obtaining his Ph.D degree, Dr. Pan worked in HTMM Corporation, Hsin-Chu,
@@ -229,44 +242,52 @@
             2003.6)<br>
             Ph.D. degree, Department of Computer Science, National Chiao Tung University 交大資工 (2003.9 ~ 2008.4)<br>
             <div class="image_m">
-                <img class="education_img_m" src="image/1200px-NCTU_emblem.png">
-                <img class="education_img_m" src="image/ccu_logo_l.png">
-                <img class="education_img_m" src="image/Tsinghua_University_Logo.png">
+                <img class="education_img_m" src="src/1200px-NCTU_emblem.png">
+                <img class="education_img_m" src="src/ccu_logo_l.png">
+                <img class="education_img_m" src="src/Tsinghua_University_Logo.png">
             </div>
         </div>
     </div>
 
 
-    <div class="communications_m" id="com_m" style="clear: both">
+    <footer class="communications_m" id="com_m" style="clear: both">
         <div class="con_word_m">
             Lab:E659<br>
             Tel: 02-2621-5656 #3520
         </div>
         <br>
         <div class="con_img_m">
-            <a href="https://www.facebook.com/mengshiuan.pan"><img src="image/facebook_circle-512.png"></a>
-            <a href="mailto:mspan@mail.tku.edu.tw"><img src="image/gmail-circle-icon-5.jpg"></a>
-            <a href="http://www.csie.tku.edu.tw/info/92"><img src="image/Tamkang_University_logo.png"></a>
+            <a href="https://www.facebook.com/mengshiuan.pan"><svg height="80" width="80" class="img">
+                    <circle cx="40" cy="40" r=40 stroke="rgb(78,113,168)" fill="rgb(78,113,168)"></circle>
+                    <text x="28" y="62" stroke="white" fill="white" style="font-size:60px">f</text>
+                </svg></a>
+            <a href="mailto:mspan@mail.tku.edu.tw">
+                <svg height="80" width="80" class="img">
+                    <circle cx="40" cy="40" r=40 stroke="red" fill="red"></circle>
+                    <polygon points="17,20 40,40 63,20" style="fill:white;stroke:white;stroke-width:1"></polygon>
+                    <polygon points="15,30 15,60 65,60 65,30 40,50" style="fill:white;stroke:white;stroke-width:1">
+                    </polygon>
+                </svg>
+            </a>
+            <a href="http://www.csie.tku.edu.tw/info/92"><img src="src/Tamkang_University_logo.png" class="img"></a>
         </div>
-    </div>
+        <footer class="author">Made by 楊竣程 黃柏睿 馮駿林 <a href="co-work.html" class="co-work">分工表</a></div>
+            </div>
 
-    <div class="topbtn_m">
-        <a href="#">
-            <svg height="80" width="80" class="top_m">
-                <polyline points="20,50 40,25 60,50"
-                    style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:white;stroke-width:5">
-            </svg>
-        </a>
-    </div>
-
-    <div class="toogle_m" onclick="change_baclground()">
-        <div class="mid_layer_m" >
-            <div class="circle_m" ></div>
-        </div>
-    </div>
-    
+            <div class="topbtn_m">
+                <a href="#">
+                    <svg height="80" width="80" class="top_m">
+                        <polyline points="20,50 40,25 60,50"
+                            style="stroke-linecap:round;stroke-linejoin:round;fill:none;stroke:white;stroke-width:5">
+                    </svg>
+                </a>
+            </div>
+            <div class="toogle_m" onclick="change_background()">
+                <div class="mid_layer_m">
+                    <div class="circle_m"></div>
+                </div>
+            </div>
 
 </body>
 
 </html>
-
